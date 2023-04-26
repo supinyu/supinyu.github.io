@@ -6,7 +6,7 @@
   <link href="http://supinyu.github.io/atom.xml" rel="self"/>
   
   <link href="http://supinyu.github.io/"/>
-  <updated>2023-04-17T11:51:17.899Z</updated>
+  <updated>2023-04-26T10:25:56.341Z</updated>
   <id>http://supinyu.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2023-04-26-test-demo</title>
+    <link href="http://supinyu.github.io/2023/04/26/2023-04-26-test-demo/"/>
+    <id>http://supinyu.github.io/2023/04/26/2023-04-26-test-demo/</id>
+    <published>2023-04-26T10:20:15.000Z</published>
+    <updated>2023-04-26T10:25:56.341Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;这是测试的内容&lt;/p&gt;
+</summary>
+        
+      
+    
+    
+    
+    <category term="Markdown" scheme="http://supinyu.github.io/categories/Markdown/"/>
+    
+    
+    <category term="Typora" scheme="http://supinyu.github.io/tags/Typora/"/>
+    
+    <category term="Markdown" scheme="http://supinyu.github.io/tags/Markdown/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
