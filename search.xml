@@ -8,7 +8,7 @@
       <link href="/2023/04/26/2023-04-26-test-demo/"/>
       <url>/2023/04/26/2023-04-26-test-demo/</url>
       
-        <content type="html"><![CDATA[<p>这是测试的内容</p>]]></content>
+        <content type="html"><![CDATA[<div class="warpper">    <div class="mac b1"></div>    <div class="mac b2"></div>    <div class="mac b3"></div><div><br><pre><code class="cpp">#include&lt;iostream&gt;using namespace std;int main(){    return 0;}这是测试的内容</code></pre></div></div>]]></content>
       
       
       <categories>
