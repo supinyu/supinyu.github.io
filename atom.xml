@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>飞虹舞毓</title>
+  
+  <subtitle>欢迎来到飞虹舞毓的博客!</subtitle>
+  <link href="http://supinyu.github.io/atom.xml" rel="self"/>
+  
+  <link href="http://supinyu.github.io/"/>
+  <updated>2024-11-05T12:27:21.099Z</updated>
+  <id>http://supinyu.github.io/</id>
+  
+  <author>
+    <name>supinyu</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://supinyu.github.io/2024/11/05/hello-world/"/>
+    <id>http://supinyu.github.io/2024/11/05/hello-world/</id>
+    <published>2024-11-05T12:27:21.099Z</published>
+    <updated>2024-11-05T12:27:21.099Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>大模型训练数据集介绍</title>
+    <link href="http://supinyu.github.io/2023/06/05/2023-06-05-llm-train-data/"/>
+    <id>http://supinyu.github.io/2023/06/05/2023-06-05-llm-train-data/</id>
+    <published>2023-06-05T10:20:15.000Z</published>
+    <updated>2024-11-05T12:27:21.099Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1、斯坦福开源数据集&quot;&gt;&lt;a href=&quot;#1、斯坦福开源数据集&quot; class=&quot;headerlink&quot; title=&quot;1、斯坦福开源数据集&quot;&gt;&lt;/a&gt;1、斯坦福开源数据集&lt;/h2&gt;&lt;p&gt;数据集名称：alpaca_data.json&lt;/p&gt;
+&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="大模型" scheme="http://supinyu.github.io/categories/%E5%A4%A7%E6%A8%A1%E5%9E%8B/"/>
+    
+    
+    <category term="大模型" scheme="http://supinyu.github.io/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B/"/>
+    
+    <category term="数据集" scheme="http://supinyu.github.io/tags/%E6%95%B0%E6%8D%AE%E9%9B%86/"/>
+    
+  </entry>
+  
+</feed>
