@@ -42,6 +42,33 @@
     </entry>
     
     
+    
+    <entry>
+      <title>大模型训练数据集介绍11111</title>
+      <link href="/2023/06/05/2023-06-05-llm-train-data2/"/>
+      <url>/2023/06/05/2023-06-05-llm-train-data2/</url>
+      
+        <content type="html"><![CDATA[<h2 id="1、斯坦福开源数据集"><a href="#1、斯坦福开源数据集" class="headerlink" title="1、斯坦福开源数据集"></a>1、斯坦福开源数据集</h2><p>数据集名称：alpaca_data.json</p><p><a href="https://github.com/tatsu-lab/stanford_alpaca">https://github.com/tatsu-lab/stanford_alpaca</a></p><p>alpaca_data.json包含了我们用于微调Alpaca模型的52K条指令跟随数据。<br>这个JSON文件是一个字典列表，每个字典包含以下字段：<br>instruction: str，描述模型应执行的任务。</p><p>这52K条指令中的每一条都是独特的。</p><p>input: str，任务的可选上下文或输入。例如，当指令为“总结以下文章”时，输入为文章。大约40%的示例有输入。</p><p>output: str，由text-davinci-003生成的指令答案</p><h2 id="2、Belle开源数据集"><a href="#2、Belle开源数据集" class="headerlink" title="2、Belle开源数据集"></a>2、Belle开源数据集</h2><h3 id="2-1、个性化角色对话"><a href="#2-1、个性化角色对话" class="headerlink" title="2-1、个性化角色对话"></a>2-1、个性化角色对话</h3><p>数据集名称：BelleGroup/generated_chat_0.4M</p><p><a href="https://huggingface.co/datasets/BelleGroup/generated_chat_0.4M">https://huggingface.co/datasets/BelleGroup/generated_chat_0.4M</a></p><pre class="line-numbers language-plsql" data-language="plsql"><code class="language-plsql">instruction<span class="token operator">:</span> 指令input<span class="token operator">:</span> 输入（本数据集均为空）output<span class="token operator">:</span> 输出<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><h3 id="2-2、中文数据题数据"><a href="#2-2、中文数据题数据" class="headerlink" title="2-2、中文数据题数据"></a>2-2、中文数据题数据</h3><p>数据集名称：BelleGroup/school_math_0.25M</p><p><a href="https://huggingface.co/datasets/BelleGroup/school_math_0.25M">https://huggingface.co/datasets/BelleGroup/school_math_0.25M</a></p><p>字段同上</p><h3 id="2-3、中文指令数据"><a href="#2-3、中文指令数据" class="headerlink" title="2-3、中文指令数据"></a>2-3、中文指令数据</h3><p>数据集名称：BelleGroup/train_2M_CN</p><p><a href="https://huggingface.co/datasets/BelleGroup/train_2M_CN">https://huggingface.co/datasets/BelleGroup/train_2M_CN</a></p><h2 id="3、Guanaco数据集"><a href="#3、Guanaco数据集" class="headerlink" title="3、Guanaco数据集"></a>3、Guanaco数据集</h2><p>Guanaco是一个基于Meta的LLaMA 7B模型训练的指令跟随语言模型。在Alpaca模型的原始52K数据的基础上，我们添加了额外的534,530个条目，涵盖英语、简体中文、繁体中文（台湾）、繁体中文（香港）、日语、德语以及各种语言和语法任务。通过使用这些丰富的数据重新训练和优化模型，Guanaco在多语言环境中展现出了出色的性能和潜力</p><p>数据集名称：Guanaco<br><a href="https://guanaco-model.github.io/">https://guanaco-model.github.io/</a></p><h2 id="4、Fifefly-数据集"><a href="#4、Fifefly-数据集" class="headerlink" title="4、Fifefly 数据集"></a>4、Fifefly 数据集</h2><p>我们收集了23个常见的中文数据集，对于每个任务，由人工书写若干种指令模板，保证数据的高质量与丰富度，数据量为115万 。</p><p>数据分布如下图所示</p><p><img src="https://cdn.jsdelivr.net/gh/supinyu/supinyu.github.io/medias/images/06-05-01.png" alt="数据分布"></p><p>每条数据的格式如下，包含任务类型、输入、目标输出：</p><pre class="line-numbers language-plsql" data-language="plsql"><code class="language-plsql">{  <span class="token string">"kind"</span><span class="token operator">:</span> <span class="token string">"ClassicalChinese"</span><span class="token punctuation">,</span>   <span class="token string">"input"</span><span class="token operator">:</span> <span class="token string">"将下面句子翻译成现代文：\n石中央又生一树，高百余尺，条干偃阴为五色，翠叶如盘，花径尺余，色深碧，蕊深红，异香成烟，著物霏霏。"</span><span class="token punctuation">,</span>  <span class="token string">"target"</span><span class="token operator">:</span> <span class="token string">"大石的中央长着一棵树，一百多尺高，枝干是彩色的，树叶有盘子那样大，花的直径有一尺宽，花瓣深蓝色，花中飘出奇异的香气笼罩着周围，如烟似雾。"</span>}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>数据集名称：YeungNLP/firefly-train-1.1M</p><p><a href="https://huggingface.co/datasets/YeungNLP/firefly-train-1.1M">https://huggingface.co/datasets/YeungNLP/firefly-train-1.1M</a></p><p>训练数据集的token长度分布如下图所示，绝大部分数据的长度都小于600：</p><p><img src="https://cdn.jsdelivr.net/gh/supinyu/supinyu.github.io/medias/images/06-05-02.png" alt="token长度分布"></p><h2 id="5、alpaca-chinese-dataset"><a href="#5、alpaca-chinese-dataset" class="headerlink" title="5、alpaca_chinese_dataset"></a>5、alpaca_chinese_dataset</h2><p>在alpaca_dataset的基础上，进行了翻译，并补充了相关中文数据</p><p><a href="https://github.com/hikariming/alpaca_chinese_dataset">https://github.com/hikariming/alpaca_chinese_dataset</a></p><h2 id="6、Chinese-Open-Instruction-Generalist"><a href="#6、Chinese-Open-Instruction-Generalist" class="headerlink" title="6、Chinese Open Instruction Generalist"></a>6、Chinese Open Instruction Generalist</h2><p>智源开源的数据集<br>我们提出了“中国开放指令通用项目（COIG）”，以维护一组无害、有用和多样化的中文指令语料库。主要包括</p><ul><li>翻译通用指令语料库，</li><li>考试指令语料库，</li><li>人类价值对齐指令语料库，</li><li>一个多轮反事实修正聊天语料库</li><li>一个leetcode指令语料库</li></ul><p><a href="https://huggingface.co/datasets/BAAI/COIG">https://huggingface.co/datasets/BAAI/COIG</a></p><h2 id="7、Alpaca-GPT4"><a href="#7、Alpaca-GPT4" class="headerlink" title="7、Alpaca_GPT4"></a>7、Alpaca_GPT4</h2><p><a href="https://github.com/Instruction-Tuning-with-GPT-4/GPT-4-LLM">https://github.com/Instruction-Tuning-with-GPT-4/GPT-4-LLM</a></p><p>亮点是利用 GPT-4 生成的 Alpaca 数据，并做了中文的翻译</p><h2 id="8、Alpaca-CoT"><a href="#8、Alpaca-CoT" class="headerlink" title="8、Alpaca-CoT"></a>8、Alpaca-CoT</h2><p>对现在的开源数据集做了相关的整理和汇总，并且加上了自己开源的CoT数据集。懒人必备</p><p><a href="https://huggingface.co/datasets/QingyiSi/Alpaca-CoT">https://huggingface.co/datasets/QingyiSi/Alpaca-CoT</a></p><h2 id="9、其他数据"><a href="#9、其他数据" class="headerlink" title="9、其他数据"></a>9、其他数据</h2><ul><li>OpenDataLab 为国产大模型提供高质量的开放数据集<ul><li><a href="https://opendatalab.com/">https://opendatalab.com/</a></li></ul></li><li>千言数据集<ul><li><a href="https://www.luge.ai/#/">https://www.luge.ai/#/</a></li></ul></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 大模型 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 大模型 </tag>
+            
+            <tag> 数据集 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
   
   
 </search>
