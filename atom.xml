@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>飞虹舞毓</title>
+  <title>老苏的AI茶馆</title>
   
-  <subtitle>欢迎来到飞虹舞毓的博客!</subtitle>
+  <subtitle>欢迎来到老苏的AI茶馆!</subtitle>
   <link href="http://supinyu.github.io/atom.xml" rel="self"/>
   
   <link href="http://supinyu.github.io/"/>
